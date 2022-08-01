@@ -1,0 +1,115 @@
+/* --------------------- *\
+        DOCUMENTO
+\* --------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans", Arial, Sans-serif;
+	font-size: 16px;
+}
+
+:root {
+    --color-white:white;
+    --color-info: #4facd3;
+    --color-clientes:#2d353e;
+    --color-contacto:#3c4045;
+    --color-standart: #4c8dce;
+    --color-warning: #ddb146;
+    --size-titulo:2.2em;
+    --size-titulomedio: 2.1em;
+    --size-subtitulo:1.6em;
+    --size-links:1.2em; 
+}
+
+a{text-decoration: none;}
+
+  
+/* --------------------- *\
+           HEADER
+\* --------------------- */
+#header {
+    background-image: url('./Assets/bg.jpg') ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 90vh;
+}
+#header a{font-size: var(--size-links);}
+#header a:hover {text-decoration: underline;}
+
+#header.inicio {align-items: baseline;}
+
+#header .container {height: 700px;}
+#header .textos {margin: 200px 0;}
+#header .textos h2 { font-size:var(--size-titulomedio);}
+#header .textos h3 {
+    margin-bottom: 50px; 
+    font-size: var(--size-titulomedio);
+}
+    
+#header .textos button {padding: 10px 50px;}
+
+/* --------------------- *\
+           MAIN
+\* --------------------- */
+
+#cards .card {border: none;}
+#cards #part1 img {
+    width: 27%;
+    align-self: center;
+}
+#cards .img-container img{ 
+    width: 83%;
+    border-radius: 5px;
+}
+.text-viva {
+    font-size: var(--size-titulomedio);
+    color: var(--color-info);
+}
+.text-aliq {
+    font-size: var(--size-titulomedio);
+    color: var(--color-warning);
+}
+#clientes {
+    background-image: url('./Assets/precios-bg.jpg') ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+}
+#clientes .card {height: 535px;}
+#clientes .fondoClientes {background: var(--color-clientes);}
+#clientes .fondoStandardCard{background: var(--color-standart);}
+#clientes .fondoStandard{
+    background: var(--color-standart);
+    border-color: var(--color-white);
+}
+#clientes .btn-contratar {border-radius: 100px;}
+#opiniones .card{
+    border: none;
+    width: 70%;
+}
+#opiniones .imgContainer-clientes{
+    width: 110px;
+    height: auto;
+}
+/* --------------------- *\
+          FOOTER
+\* --------------------- */
+#footer {
+    height: auto;
+}
+#footer .fondoContacto {background: var(--color-contacto);}
+.container-item {
+    height: 70px;
+    width: 70px;
+}
+.container-item img {
+    width: 100%;
+}
